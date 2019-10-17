@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Register" %} {% endblock %}
+{% block content %}
+{% load accounts_tags %}
+
+<div class="container ">
+  <br><h2 > {% trans "Register" %} </h2>
+  <hr><br><br>
+  <div class="row">
+    <div class="offset-lg-3 col-lg-6 ">
+      <form	action="." class="form"	method="post">{%	csrf_token	%}
+        <div class="form-group">
+          <h5>{% trans "User name" %}</h5><br>
+          {{ form.username|addclass:"form-control"}}<br>
+          <small id="emailHelp" class="form-text text-muted">{% trans "You'll have a unique user name." %}</small>
+          {% if form.errors and form.username.errors%}
+            <div class="alert alert-danger" role="alert">
+                {% trans " user name used , please chose another one ." %}
+      				</div>
+          {% endif %}
+        </div>
+        <div class="form-group">
+        <h5>{% trans "Email" %}</h5><br>
+        {{ form.email|addclass:"form-control"}}<br>
+        <small id="emailHelp" class="form-text text-muted">{% trans "We'll never share your email with anyone else" %}</small>
+        {% if form.errors and form.email.errors %}
+          <div class="alert alert-danger" role="alert">
+              {% trans " used email or not right " %}
+            </div>
+        {% endif %}
+      </div>
+      <div class="form-group">
+      <h5>{% trans "Phone Number" %}</h5><br>
+      {{ form.phone|addclass:"form-control"}}<br>
+      <small id="emailHelp" class="form-text text-muted">{% trans "We'll never share your phone number with anyone else." %}</small>
+      {% if form.errors and form.phone.errors %}
+        <div class="alert alert-danger" role="alert">
+              {% trans " used phone number or not right " %}
+          </div>
+      {% endif %}
+    </div>
+        <h5>{% trans "Password" %}<h5> <br>
+        {{ form.password1|addclass:"form-control" }}<br>
+        <h5>{% trans "Confirm Password" %}<h5> <br>
+        {{ form.password2|addclass:"form-control" }}<br>
+        {% if form.errors and form.password2.errors %}
+          <div class="alert alert-danger" role="alert">
+                {% trans " passwords don't match " %}
+            </div>
+        {% endif %}<hr>
+        <input	type="submit"	class="btn btn-outline-primary" value={% trans "Register" %}>
+      </form>
+    <br><br>
+    </div>
+  </div>
+</div>
+{% endblock %}

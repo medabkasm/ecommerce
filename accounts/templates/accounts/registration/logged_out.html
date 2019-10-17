@@ -1,0 +1,12 @@
+{%	extends	"base.html"	%}
+{%	block	title	%}Logged	out{%	endblock	%}
+{%	block	content	%}
+{% load i18n %}
+<div class = "container">
+	<div class="alert alert-success" role="alert">
+	  <h4 class="alert-heading">{% trans "Logged out" %}</h4>
+		<p> {% trans "You	have	been	successfully	logged	out. You	can " %}</p><hr>
+			<a	href="{%	url 'home:login'	%}" class="alert-link">{% trans "log-in	again" %}</a>
+	</div>
+</div>
+{%	endblock	%}

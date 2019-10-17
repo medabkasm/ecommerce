@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Post Details" %}{% endblock %}
+{% block content %}
+
+<div class="contaner" >
+  {% if user.is_authenticated and user.username == post.profile.username %}
+    <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link " href="{% url 'profiles:edit_post'  user.username post.id %}"><strong>{% trans "Edit Post" %}</strong></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link "  href="{% url 'profiles:delete_post'  user.username post.id %}"><strong>{% trans "Delete Post" %}</strong></a>
+    </li>
+  </ul>
+  {% endif %}
+  <div class="row">
+    <div class="col-lg-3 col-md-6 col-ms-6 border border-info">
+      <img src="{{ post.coverImg.url }}" alt="post cover image" class = "img-fluid"    width="250" height="200" >
+    </div>
+    {% if post.postImage %}
+     {% for image in post.postImage.all %}
+     <div class="col-lg-3 col-md-6 col-ms-6 border border-info">
+          <img src="{{ image.image.url }}" alt="post cover image" class = "img-fluid img-thumbnail"  width="250" height="200">
+        </div>
+    {% endfor %}
+    {% endif %}
+  </div>
+  <div class="row">
+    <div class="col">
+<div class="list-group">
+  <li class="list-group-item active"><span class = "badge">{{post.publish}} </span> </li>
+<li class="list-group-item">{{post.name}}</li>
+<li class="list-group-item  border-success "><h4 class="list-group-item-heading">{% trans "Owner" %}</h4><a href = "{{post.profile.get_absolute_url}}" class="list-group-item-text">{{post.profile.username}}</a></li>
+<li class="list-group-item border-success"><h4 class="list-group-item-heading">{% trans "Offer" %}</h4><p class="list-group-item-text">{{post.offer}}</p></li>
+<li class="list-group-item border-success"><h4 class="list-group-item-heading">{% trans "Exchange" %}</h4><p class="list-group-item-text">{{post.exchange}}</p></li>
+<li class="list-group-item border-success"><h4 class="list-group-item-heading">{% trans "Phone Status" %}</h4><p class="list-group-item-text">{{post.phoneStatus}}</p></li>
+<li class="list-group-item border-success"><h4 class="list-group-item-heading">{% trans "Negotiation" %}</h4><p class="list-group-item-text">{{post.negotiation}}</p></li>
+<li class="list-group-item border-success"><h4 class="list-group-item-heading">{% trans "Wilaya" %}</h4><p class="list-group-item-text">{{post.wilaya}}</p></li>
+<li class="list-group-item border-success"><h4 class="list-group-item-heading">{% trans "Phone Number" %}</h4><p class="list-group-item-text">{{post.phone}}</p></li>
+<li class="list-group-item border-success"><h4 class="list-group-item-heading">{% trans "Price" %}</h4><p class="list-group-item-text">{{post.price}} DA</p></li>
+<li class="list-group-item border-success"><h4 class="list-group-item-heading">{% trans "description" %}</h4><p class="list-group-item-text">{{post.description}}</p></li>
+</div>
+</div>
+</div>
+</div>
+
+
+
+{% endblock %}

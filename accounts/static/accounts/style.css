@@ -1,0 +1,18 @@
+.all{
+	background: #f2f9ff ;
+	}
+
+.container{
+	text-align: center;
+	}
+.all a {
+	text-decoration: none;
+}
+
+.all a :hover{
+	color : #43b929;
+}
+
+.dark {
+	background: black;
+}

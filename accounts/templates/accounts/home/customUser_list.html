@@ -1,0 +1,6 @@
+{% for object in object_list %}
+<p>User name <a href= {{object.get_absolute_url}} > {{object.username}}</a> <p>
+<p> email : {{object.email}} </p>
+<hr>
+{% endfor %}
+<a href = "{% url 'home:users_posts' %}"> HOME </a>

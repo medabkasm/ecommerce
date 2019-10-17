@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Password reset on localhost:8000
+From: webmaster@localhost
+To: med@outlook.com
+Date: Tue, 18 Sep 2018 13:36:50 -0000
+Message-ID: <153727781080.6350.5327685470170227939@meduinogeek>
+
+
+You're receiving this email because you requested a password reset for your user account at localhost:8000.
+
+Please go to the following page and choose a new password:
+
+http://localhost:8000/en/reset/MQ/4zp-e50c2de26f6983989112/
+
+Your username, in case you've forgotten: mohamed
+
+Thanks for using our site!
+
+The localhost:8000 team
+
+
+
+-------------------------------------------------------------------------------

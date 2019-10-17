@@ -1,0 +1,488 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-14 20:26+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: accounts/models.py:107
+msgid "Seler"
+msgstr ""
+
+#: accounts/models.py:108
+msgid "Normal"
+msgstr ""
+
+#: accounts/models.py:135 profiles/forms.py:20
+msgid "Selling"
+msgstr ""
+
+#: accounts/models.py:136 profiles/forms.py:21
+msgid "Buying"
+msgstr ""
+
+#: accounts/models.py:140 profiles/forms.py:25
+msgid "Hide"
+msgstr ""
+
+#: accounts/models.py:141 profiles/forms.py:26
+msgid "Publish"
+msgstr ""
+
+#: accounts/models.py:145 profiles/forms.py:30
+msgid "Accept"
+msgstr ""
+
+#: accounts/models.py:146 profiles/forms.py:31
+msgid "Refuse"
+msgstr ""
+
+#: accounts/templates/accounts/home/latest_posts.html:3
+msgid "Latest Posts"
+msgstr ""
+
+#: accounts/templates/accounts/home/posts.html:3
+msgid "AbkasM"
+msgstr ""
+
+#: accounts/templates/accounts/home/posts.html:10
+#: accounts/templates/accounts/home/posts.html:12
+msgid "Add Post"
+msgstr ""
+
+#: accounts/templates/accounts/home/posts.html:34
+msgid "More"
+msgstr ""
+
+#: accounts/templates/accounts/home/posts.html:36
+msgid "Me"
+msgstr ""
+
+#: accounts/templates/accounts/home/posts.html:38
+#: accounts/templates/accounts/home/userPosts_detail.html:44
+msgid "Owner"
+msgstr ""
+
+#: accounts/templates/accounts/home/userPosts_detail.html:3
+msgid "Post Details"
+msgstr ""
+
+#: accounts/templates/accounts/home/userPosts_detail.html:10
+#: profiles/templates/profiles/editPost.html:4
+msgid "Edit Post"
+msgstr ""
+
+#: accounts/templates/accounts/home/userPosts_detail.html:13
+#: profiles/templates/profiles/deletePost.html:4
+msgid "Delete Post"
+msgstr ""
+
+#: accounts/templates/accounts/home/userPosts_detail.html:45
+#: profiles/templates/profiles/editPost.html:51
+#: profiles/templates/profiles/share_post.html:46
+msgid "Offer"
+msgstr ""
+
+#: accounts/templates/accounts/home/userPosts_detail.html:46
+#: profiles/templates/profiles/editPost.html:35
+#: profiles/templates/profiles/share_post.html:30
+msgid "Exchange"
+msgstr ""
+
+#: accounts/templates/accounts/home/userPosts_detail.html:47
+#: profiles/templates/profiles/editPost.html:43
+#: profiles/templates/profiles/share_post.html:38
+msgid "Negotiation"
+msgstr ""
+
+#: accounts/templates/accounts/home/userPosts_detail.html:48
+#: profiles/templates/profiles/editPost.html:67
+#: profiles/templates/profiles/share_post.html:62
+msgid "Wilaya"
+msgstr ""
+
+#: accounts/templates/accounts/home/userPosts_detail.html:49
+#: accounts/templates/accounts/register.html:34
+#: profiles/templates/profiles/editPost.html:59
+#: profiles/templates/profiles/editProfile.html:51
+#: profiles/templates/profiles/share_post.html:54
+msgid "Phone Number"
+msgstr ""
+
+#: accounts/templates/accounts/home/userPosts_detail.html:50
+#: profiles/templates/profiles/editPost.html:75
+#: profiles/templates/profiles/share_post.html:70
+msgid "Price"
+msgstr ""
+
+#: accounts/templates/accounts/home/userPosts_detail.html:51
+msgid "description"
+msgstr ""
+
+#: accounts/templates/accounts/register.html:3
+#: accounts/templates/accounts/register.html:8
+#: accounts/templates/accounts/register.html:52 accounts/templates/base.html:49
+msgid "Register"
+msgstr ""
+
+#: accounts/templates/accounts/register.html:14
+#: accounts/templates/accounts/registration/login.html:22
+#: profiles/templates/profiles/editProfile.html:37
+msgid "User name"
+msgstr ""
+
+#: accounts/templates/accounts/register.html:16
+msgid "You'll have a unique user name."
+msgstr ""
+
+#: accounts/templates/accounts/register.html:24
+#: accounts/templates/accounts/registration/password_reset.html:11
+#: profiles/templates/profiles/editProfile.html:65
+msgid "Email"
+msgstr ""
+
+#: accounts/templates/accounts/register.html:26
+#: accounts/templates/accounts/registration/login.html:24
+#: profiles/templates/profiles/editProfile.html:67
+msgid "We'll never share your email with anyone else."
+msgstr ""
+
+#: accounts/templates/accounts/register.html:36
+msgid "We'll never share your phone number with anyone else."
+msgstr ""
+
+#: accounts/templates/accounts/register.html:43
+#: accounts/templates/accounts/registration/login.html:26
+msgid "Password"
+msgstr ""
+
+#: accounts/templates/accounts/register.html:45
+msgid "Confirm Password"
+msgstr ""
+
+#: accounts/templates/accounts/register_done.html:3
+msgid "Welcome"
+msgstr ""
+
+#: accounts/templates/accounts/register_done.html:8
+#, python-format
+msgid " Welcome\t%(new_user.username)s "
+msgstr ""
+
+#: accounts/templates/accounts/register_done.html:9
+msgid "Your\taccount\thas\tbeen\tsuccessfully\tcreated"
+msgstr ""
+
+#: accounts/templates/accounts/register_done.html:11
+msgid "log-in Now"
+msgstr ""
+
+#: accounts/templates/accounts/registration/logged_out.html:7
+msgid "Logged out"
+msgstr ""
+
+#: accounts/templates/accounts/registration/logged_out.html:8
+msgid "You\thave\tbeen\tsuccessfully\tlogged\tout. You\tcan "
+msgstr ""
+
+#: accounts/templates/accounts/registration/logged_out.html:9
+msgid "log-in\tagain"
+msgstr ""
+
+#: accounts/templates/accounts/registration/login.html:3
+#: accounts/templates/accounts/registration/login.html:7
+#: accounts/templates/accounts/registration/login.html:31
+msgid "Log-in"
+msgstr ""
+
+#: accounts/templates/accounts/registration/login.html:10
+msgid "Register for new account"
+msgstr ""
+
+#: accounts/templates/accounts/registration/login.html:14
+msgid "Your\tusername\tand\tpassword\tdidn't\tmatch. Please\ttry\tagain."
+msgstr ""
+
+#: accounts/templates/accounts/registration/login.html:29
+msgid "Forgotten\tyour password?"
+msgstr ""
+
+#: accounts/templates/accounts/registration/password_reset.html:3
+msgid "Password reset"
+msgstr ""
+
+#: accounts/templates/accounts/registration/password_reset.html:7
+msgid "Reset your Password using your email"
+msgstr ""
+
+#: accounts/templates/accounts/registration/password_reset.html:18
+msgid "Send"
+msgstr ""
+
+#: accounts/templates/accounts/registration/password_reset_complete.html:3
+msgid "Password\treset"
+msgstr ""
+
+#: accounts/templates/accounts/registration/password_reset_complete.html:7
+msgid "Password\tset"
+msgstr ""
+
+#: accounts/templates/accounts/registration/password_reset_complete.html:8
+msgid "Your\tpassword\thas\tbeen\tset."
+msgstr ""
+
+#: accounts/templates/accounts/registration/password_reset_complete.html:10
+msgid " log\tin"
+msgstr ""
+
+#: accounts/templates/accounts/registration/password_reset_confirm.html:3
+#: accounts/templates/accounts/registration/password_reset_confirm.html:8
+msgid "Reset\tyour\tpassword"
+msgstr ""
+
+#: accounts/templates/accounts/registration/password_reset_confirm.html:13
+msgid "Your New Password"
+msgstr ""
+
+#: accounts/templates/accounts/registration/password_reset_confirm.html:21
+msgid "Confirm Your New Password"
+msgstr ""
+
+#: accounts/templates/accounts/registration/password_reset_confirm.html:28
+#: profiles/templates/profiles/registration/changePassword.html:34
+msgid "Change"
+msgstr ""
+
+#: accounts/templates/accounts/registration/password_reset_confirm.html:33
+msgid ""
+"The\tpassword\treset\tlink\twas\tinvalid,\tpossibly\tbecause\tit\thas already"
+"\tbeen\tused.\tPlease\trequest\ta\tnew\tpassword\treset !"
+msgstr ""
+
+#: accounts/templates/accounts/registration/password_reset_done.html:3
+msgid "Confirm Your request"
+msgstr ""
+
+#: accounts/templates/accounts/registration/password_reset_done.html:7
+msgid "Email sent"
+msgstr ""
+
+#: accounts/templates/accounts/registration/password_reset_done.html:8
+msgid " We've\temailed\tyou\tinstructions\tfor\tsetting\tyour\tpassword."
+msgstr ""
+
+#: accounts/templates/accounts/registration/password_reset_done.html:10
+msgid ""
+"If\tyou\tdon't\treceive\tan\temail,\tplease\tmake\tsure\tyou've\tentered"
+"\tthe address\tyou\tregistered\twith."
+msgstr ""
+
+#: accounts/templates/base.html:27
+msgid "Home"
+msgstr ""
+
+#: accounts/templates/base.html:40
+msgid "Parameter"
+msgstr ""
+
+#: accounts/templates/base.html:44
+msgid "edit Profile"
+msgstr ""
+
+#: accounts/templates/base.html:45
+msgid "change Password"
+msgstr ""
+
+#: accounts/templates/base.html:46
+msgid "Logout"
+msgstr ""
+
+#: accounts/templates/base.html:48
+msgid "Login"
+msgstr ""
+
+#: accounts/templates/base.html:55 accounts/templates/language.html:6
+msgid "Language"
+msgstr ""
+
+#: accounts/templates/base.html:60 accounts/templates/language.html:11
+msgid "Arabic"
+msgstr ""
+
+#: accounts/templates/base.html:62 accounts/templates/language.html:13
+#: mysite2/settings.py:71
+msgid "English"
+msgstr ""
+
+#: accounts/templates/base.html:70
+msgid "Search"
+msgstr ""
+
+#: mysite2/settings.py:72
+msgid "Arab"
+msgstr ""
+
+#: profiles/templates/profiles/deletePost.html:8
+msgid "Mission complete !"
+msgstr ""
+
+#: profiles/templates/profiles/deletePost.html:10
+msgid "Your\tPost\thas\tbeen\tsuccessfully deleted."
+msgstr ""
+
+#: profiles/templates/profiles/deletePost.html:10
+#: profiles/templates/profiles/registration/changePasswordDone.html:9
+msgid "back to Home"
+msgstr ""
+
+#: profiles/templates/profiles/editPost.html:10
+#: profiles/templates/profiles/editProfile.html:11
+msgid "Edit successfully"
+msgstr ""
+
+#: profiles/templates/profiles/editPost.html:11
+msgid "You\thave\tbeen\tsuccessfully\tedit your Post."
+msgstr ""
+
+#: profiles/templates/profiles/editPost.html:12
+#: profiles/templates/profiles/editProfile.html:13
+msgid "Back to Home"
+msgstr ""
+
+#: profiles/templates/profiles/editPost.html:15
+msgid "Edit your Post"
+msgstr ""
+
+#: profiles/templates/profiles/editPost.html:19
+#: profiles/templates/profiles/share_post.html:14
+msgid "Name"
+msgstr ""
+
+#: profiles/templates/profiles/editPost.html:27
+#: profiles/templates/profiles/share_post.html:22
+msgid "Status"
+msgstr ""
+
+#: profiles/templates/profiles/editPost.html:83
+#: profiles/templates/profiles/share_post.html:78
+msgid "Description"
+msgstr ""
+
+#: profiles/templates/profiles/editPost.html:91
+#: profiles/templates/profiles/share_post.html:86
+msgid "Cover for the Post"
+msgstr ""
+
+#: profiles/templates/profiles/editPost.html:98
+#: profiles/templates/profiles/share_post.html:93
+msgid "More images for the Post"
+msgstr ""
+
+#: profiles/templates/profiles/editPost.html:122
+msgid "edit"
+msgstr ""
+
+#: profiles/templates/profiles/editProfile.html:3
+msgid "Edit Profile "
+msgstr ""
+
+#: profiles/templates/profiles/editProfile.html:12
+msgid "You\thave\tbeen\tsuccessfully\tedit your personel infos."
+msgstr ""
+
+#: profiles/templates/profiles/editProfile.html:17
+msgid "Change Password"
+msgstr ""
+
+#: profiles/templates/profiles/editProfile.html:39
+msgid "You'll have a aunique user name."
+msgstr ""
+
+#: profiles/templates/profiles/editProfile.html:53
+msgid "You'll have a aunique phone number."
+msgstr ""
+
+#: profiles/templates/profiles/editProfile.html:79
+msgid "First Name"
+msgstr ""
+
+#: profiles/templates/profiles/editProfile.html:93
+msgid "Last Name"
+msgstr ""
+
+#: profiles/templates/profiles/editProfile.html:106
+msgid "Profile Type"
+msgstr ""
+
+#: profiles/templates/profiles/editProfile.html:119
+msgid "Address"
+msgstr ""
+
+#: profiles/templates/profiles/editProfile.html:132
+msgid "Country"
+msgstr ""
+
+#: profiles/templates/profiles/editProfile.html:145
+msgid "State"
+msgstr ""
+
+#: profiles/templates/profiles/editProfile.html:158
+msgid "Save"
+msgstr ""
+
+#: profiles/templates/profiles/registration/changePassword.html:4
+msgid "Password Change"
+msgstr ""
+
+#: profiles/templates/profiles/registration/changePassword.html:7
+msgid "Change\tyour\tpassword"
+msgstr ""
+
+#: profiles/templates/profiles/registration/changePassword.html:12
+msgid "Your current Password"
+msgstr ""
+
+#: profiles/templates/profiles/registration/changePassword.html:20
+msgid "New Password"
+msgstr ""
+
+#: profiles/templates/profiles/registration/changePassword.html:27
+msgid "Confirm "
+msgstr ""
+
+#: profiles/templates/profiles/registration/changePasswordDone.html:3
+msgid "Password\tchanged"
+msgstr ""
+
+#: profiles/templates/profiles/registration/changePasswordDone.html:7
+msgid "Password Changed "
+msgstr ""
+
+#: profiles/templates/profiles/registration/changePasswordDone.html:8
+msgid "Your\tpassword\thas\tbeen\tsuccessfully\tchanged."
+msgstr ""
+
+#: profiles/templates/profiles/share_post.html:4
+msgid "Share Post"
+msgstr ""
+
+#: profiles/templates/profiles/share_post.html:10
+msgid "Add a new Post"
+msgstr ""
+
+#: profiles/templates/profiles/share_post.html:117
+msgid "create"
+msgstr ""

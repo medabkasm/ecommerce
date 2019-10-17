@@ -1,0 +1,37 @@
+{%	extends	"base.html"	%}
+{% load i18n %}
+{%	block	title	%}{% trans "Log-in" %}{%	endblock	%}
+{%	block	content	%}
+{% load accounts_tags %}
+<div class="container ">
+		<br><h1>{% trans "Log-in" %}</h1>
+		<hr>
+		<small id="emailHelp" class="form-text text-muted">
+			<a  href = "{% url "home:register" %}"> <p>{% trans "Register for new account" %} </p></a>
+		</small>
+  				{%	if	form.errors	%}
+			<div class="alert alert-danger" role="alert">
+						{% trans "Your	username	and	password	didn't	match. Please	try	again." %}
+				</div>
+		{%	endif	%}
+		<br><br>
+		<div class="row">
+			<div class="offset-lg-3 col-lg-6 ">
+				<form	action="{%	url	'home:login'	%}"	method="post">{%	csrf_token	%}
+					<div class="form-group">
+						<h4>{% trans "User name" %}</h4><br>
+						{{ form.username|addclass:"form-control"}}<br>
+						<small id="emailHelp" class="form-text text-muted">{% trans "We'll never share your email with anyone else." %}</small>
+					</div>
+					<h4>{% trans "Password" %}<h4> <br>
+					{{ form.password|addclass:"form-control" }}<br>
+					<small id="emailHelp" class="form-text text-muted">
+						<a	href="{%	url	"password_reset"	%}"><p>{% trans "Forgotten	your password?" %}</p></a>
+					</small><br><hr>
+					<input	type="submit"	class="btn btn-outline-primary" value={% trans "Log-in" %}>
+				</form>
+				<br><br>
+			</div>
+		</div>
+</div>
+{%	endblock	%}

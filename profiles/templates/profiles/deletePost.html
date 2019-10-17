@@ -1,0 +1,14 @@
+
+{%	extends	"base.html"	%}
+{% load i18n %}
+{%	block	title	%}{% trans "Delete Post" %}{%	endblock	%}
+{%	block	content	%}
+<div class="container">
+<div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">{% trans "Mission complete !" %}"</h4>
+  <hr>
+  <p>{% trans "Your	Post	has	been	successfully deleted." %} <a href = {% url 'home:users_posts' %} >{% trans "back to Home" %} </a> </p>
+</div>
+</div>
+
+{%	endblock	%}

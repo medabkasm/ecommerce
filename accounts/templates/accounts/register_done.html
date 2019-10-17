@@ -1,0 +1,14 @@
+{%	extends	"base.html"	%}
+{% load i18n %}
+{%	block	title	%}{% trans "Welcome" %}{%	endblock	%}
+{%	block	content	%}
+
+<div class="container">
+  <div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">{% blocktrans %} Welcome	{{ new_user.username	}} {% endblocktrans %}</h4>
+    <p>{% trans "Your	account	has	been	successfully	created" %}</p>
+    <hr>
+    <a	href="{%	url 'home:login'	%}" class="alert-link">{% trans  "log-in Now" %}	</a>
+  </div>
+  </div>
+{%	endblock	%}

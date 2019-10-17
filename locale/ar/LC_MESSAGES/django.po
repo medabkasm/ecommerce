@@ -1,0 +1,538 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-17 21:30+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: accounts/forms.py:31 accounts/models.py:145 profiles/forms.py:30
+msgid "Accept"
+msgstr "قبول"
+
+#: accounts/forms.py:32 accounts/models.py:146 profiles/forms.py:31
+msgid "Refuse"
+msgstr "رفض"
+
+#: accounts/forms.py:40 accounts/models.py:135 profiles/forms.py:20
+msgid "Selling"
+msgstr "بيع"
+
+#: accounts/forms.py:41 accounts/models.py:136 profiles/forms.py:21
+msgid "Buying"
+msgstr "شراء"
+
+#: accounts/forms.py:44
+#, fuzzy
+#| msgid "Phone Number"
+msgid "Phone name"
+msgstr "رقم الهاتف"
+
+#: accounts/forms.py:46
+msgid "Min Price in Da"
+msgstr "أعلئ ثمن"
+
+#: accounts/forms.py:47
+msgid "Max Price in Da"
+msgstr "أدنئ ثمن"
+
+#: accounts/forms.py:48
+#: accounts/templates/accounts/home/userPosts_detail.html:49
+#: profiles/templates/profiles/editPost.html:75
+#: profiles/templates/profiles/share_post.html:70
+msgid "Wilaya"
+msgstr "الولاية"
+
+#: accounts/forms.py:51 profiles/templates/profiles/editPost.html:91
+#: profiles/templates/profiles/share_post.html:86
+msgid "Description"
+msgstr "الوصف"
+
+#: accounts/models.py:107
+msgid "Seler"
+msgstr "بائع"
+
+#: accounts/models.py:108
+msgid "Normal"
+msgstr "متسوق"
+
+#: accounts/models.py:140 profiles/forms.py:25
+msgid "Hide"
+msgstr "إخفاء"
+
+#: accounts/models.py:141 profiles/forms.py:26
+msgid "Publish"
+msgstr "إظهار"
+
+#: accounts/templates/accounts/home/latest_posts.html:3
+msgid "Latest Posts"
+msgstr "آخر المنشورات"
+
+#: accounts/templates/accounts/home/posts.html:4
+msgid "AbkasM"
+msgstr ""
+
+#: accounts/templates/accounts/home/posts.html:9
+msgid "Advanced Search"
+msgstr "بحث متقدم"
+
+#: accounts/templates/accounts/home/posts.html:16
+#: accounts/templates/accounts/home/userPosts_detail.html:45
+#: profiles/templates/profiles/editPost.html:51
+#: profiles/templates/profiles/share_post.html:46
+msgid "Offer"
+msgstr "نوع العرض"
+
+#: accounts/templates/accounts/home/posts.html:20
+#: accounts/templates/accounts/home/userPosts_detail.html:46
+#: profiles/templates/profiles/editPost.html:35
+#: profiles/templates/profiles/share_post.html:30
+msgid "Exchange"
+msgstr "المقايضة"
+
+#: accounts/templates/accounts/home/posts.html:50
+msgid "Filter"
+msgstr "ترشيح"
+
+#: accounts/templates/accounts/home/posts.html:59
+#: accounts/templates/accounts/home/posts.html:61
+msgid "Add Post"
+msgstr "أضف عرضاً"
+
+#: accounts/templates/accounts/home/posts.html:87
+msgid "More"
+msgstr "المزيد"
+
+#: accounts/templates/accounts/home/posts.html:89
+msgid "Me"
+msgstr "حسابي"
+
+#: accounts/templates/accounts/home/posts.html:91
+#: accounts/templates/accounts/home/userPosts_detail.html:44
+msgid "Owner"
+msgstr "المالك"
+
+#: accounts/templates/accounts/home/userPosts_detail.html:3
+msgid "Post Details"
+msgstr "تفاصيل العرض"
+
+#: accounts/templates/accounts/home/userPosts_detail.html:10
+#: profiles/templates/profiles/editPost.html:4
+msgid "Edit Post"
+msgstr "تعديل العرض"
+
+#: accounts/templates/accounts/home/userPosts_detail.html:13
+#: profiles/templates/profiles/deletePost.html:4
+msgid "Delete Post"
+msgstr "حذف العرض"
+
+#: accounts/templates/accounts/home/userPosts_detail.html:47
+#: profiles/templates/profiles/editPost.html:59
+#: profiles/templates/profiles/share_post.html:54
+#, fuzzy
+#| msgid "Status"
+msgid "Phone Status"
+msgstr "حالة العرض"
+
+#: accounts/templates/accounts/home/userPosts_detail.html:48
+#: profiles/templates/profiles/editPost.html:43
+#: profiles/templates/profiles/share_post.html:38
+msgid "Negotiation"
+msgstr "تخفيض"
+
+#: accounts/templates/accounts/home/userPosts_detail.html:50
+#: accounts/templates/accounts/register.html:34
+#: profiles/templates/profiles/editPost.html:67
+#: profiles/templates/profiles/editProfile.html:51
+#: profiles/templates/profiles/share_post.html:62
+msgid "Phone Number"
+msgstr "رقم الهاتف"
+
+#: accounts/templates/accounts/home/userPosts_detail.html:51
+#: profiles/templates/profiles/editPost.html:83
+#: profiles/templates/profiles/share_post.html:78
+msgid "Price"
+msgstr "الثمن"
+
+#: accounts/templates/accounts/home/userPosts_detail.html:52
+msgid "description"
+msgstr "وصف"
+
+#: accounts/templates/accounts/register.html:3
+#: accounts/templates/accounts/register.html:8
+#: accounts/templates/accounts/register.html:52 accounts/templates/base.html:51
+msgid "Register"
+msgstr "إنشاء حساب"
+
+#: accounts/templates/accounts/register.html:14
+#: accounts/templates/accounts/registration/login.html:22
+#: profiles/templates/profiles/editProfile.html:37
+msgid "User name"
+msgstr "إسم المستخدم"
+
+#: accounts/templates/accounts/register.html:16
+msgid "You'll have a unique user name."
+msgstr "ستحضئ باسم خاص بك لا يشاركك فيه أحد"
+
+#: accounts/templates/accounts/register.html:24
+#: accounts/templates/accounts/registration/password_reset.html:11
+#: profiles/templates/profiles/editProfile.html:65
+msgid "Email"
+msgstr "البريداﻹلكتروني"
+
+#: accounts/templates/accounts/register.html:26
+#: accounts/templates/accounts/registration/login.html:24
+#: profiles/templates/profiles/editProfile.html:67
+msgid "We'll never share your email with anyone else."
+msgstr "لن نشارك أبدا بريدك اﻹلكتروني بدون موافقتك"
+
+#: accounts/templates/accounts/register.html:36
+msgid "We'll never share your phone number with anyone else."
+msgstr "لن نشارك أبدا رقم هاتفك بدون موافقتك"
+
+#: accounts/templates/accounts/register.html:43
+#: accounts/templates/accounts/registration/login.html:26
+msgid "Password"
+msgstr "كلمة السر"
+
+#: accounts/templates/accounts/register.html:45
+msgid "Confirm Password"
+msgstr "تأكيد كلمة السر"
+
+#: accounts/templates/accounts/register_done.html:3
+msgid "Welcome"
+msgstr "مرحبا بك"
+
+#: accounts/templates/accounts/register_done.html:8
+#, python-format
+msgid " Welcome\t%(new_user.username)s "
+msgstr " %(new_user.username)s  مرحبا بك  "
+
+#: accounts/templates/accounts/register_done.html:9
+msgid "Your\taccount\thas\tbeen\tsuccessfully\tcreated"
+msgstr "تم إنشاء حساب خاص بك"
+
+#: accounts/templates/accounts/register_done.html:11
+msgid "log-in Now"
+msgstr "سجل دخولك "
+
+#: accounts/templates/accounts/registration/logged_out.html:7
+msgid "Logged out"
+msgstr "تم تسجيل الخروج"
+
+#: accounts/templates/accounts/registration/logged_out.html:8
+msgid "You\thave\tbeen\tsuccessfully\tlogged\tout. You\tcan "
+msgstr "لقد قمت بستجيل خروجك بنجاح"
+
+#: accounts/templates/accounts/registration/logged_out.html:9
+msgid "log-in\tagain"
+msgstr "سجل دخولك ثانية"
+
+#: accounts/templates/accounts/registration/login.html:3
+#: accounts/templates/accounts/registration/login.html:7
+#: accounts/templates/accounts/registration/login.html:31
+msgid "Log-in"
+msgstr "تسجيل دخول"
+
+#: accounts/templates/accounts/registration/login.html:10
+msgid "Register for new account"
+msgstr "أنشئ حسابا جديدا"
+
+#: accounts/templates/accounts/registration/login.html:14
+msgid "Your\tusername\tand\tpassword\tdidn't\tmatch. Please\ttry\tagain."
+msgstr "لم يتم التوافق بين إسم المستخدم و كلمة السر"
+
+#: accounts/templates/accounts/registration/login.html:29
+msgid "Forgotten\tyour password?"
+msgstr "هل نسيت كلمة السر ؟"
+
+#: accounts/templates/accounts/registration/password_reset.html:3
+msgid "Password reset"
+msgstr "إعادة تعيين كلمة السر"
+
+#: accounts/templates/accounts/registration/password_reset.html:7
+msgid "Reset your Password using your email"
+msgstr "أعد تعيين كلمة السر باستعمال حساب البريداﻹلكتروني"
+
+#: accounts/templates/accounts/registration/password_reset.html:18
+msgid "Send"
+msgstr "أرسل"
+
+#: accounts/templates/accounts/registration/password_reset_complete.html:3
+msgid "Password\treset"
+msgstr "إعادة تعيين كلمة السر"
+
+#: accounts/templates/accounts/registration/password_reset_complete.html:7
+msgid "Password\tset"
+msgstr "تعيين كلمة السر"
+
+#: accounts/templates/accounts/registration/password_reset_complete.html:8
+msgid "Your\tpassword\thas\tbeen\tset."
+msgstr "تم تعيين كلمة السر بنجاح"
+
+#: accounts/templates/accounts/registration/password_reset_complete.html:10
+msgid " log\tin"
+msgstr "تسجيل الدخول"
+
+#: accounts/templates/accounts/registration/password_reset_confirm.html:3
+#: accounts/templates/accounts/registration/password_reset_confirm.html:8
+msgid "Reset\tyour\tpassword"
+msgstr "أعد تعيين كلمة السر"
+
+#: accounts/templates/accounts/registration/password_reset_confirm.html:13
+msgid "Your New Password"
+msgstr "كلمة السر الجديدة"
+
+#: accounts/templates/accounts/registration/password_reset_confirm.html:21
+msgid "Confirm Your New Password"
+msgstr "تأكيد كلمة السر"
+
+#: accounts/templates/accounts/registration/password_reset_confirm.html:28
+#: profiles/templates/profiles/registration/changePassword.html:34
+msgid "Change"
+msgstr "تغيير"
+
+#: accounts/templates/accounts/registration/password_reset_confirm.html:33
+msgid ""
+"The\tpassword\treset\tlink\twas\tinvalid,\tpossibly\tbecause\tit\thas already"
+"\tbeen\tused.\tPlease\trequest\ta\tnew\tpassword\treset !"
+msgstr "الرابط غير مقبول , تأكد من أنك إستعملت نفس حساب الصحيح"
+
+#: accounts/templates/accounts/registration/password_reset_done.html:3
+msgid "Confirm Your request"
+msgstr "أكد طلبك"
+
+#: accounts/templates/accounts/registration/password_reset_done.html:7
+msgid "Email sent"
+msgstr "تم إرسال البريداﻹلكتروني"
+
+#: accounts/templates/accounts/registration/password_reset_done.html:8
+msgid " We've\temailed\tyou\tinstructions\tfor\tsetting\tyour\tpassword."
+msgstr "تم إرسال بريدا إلكترونيا لبريدك و ذلك لتأكيد إعادة التعيين"
+
+#: accounts/templates/accounts/registration/password_reset_done.html:10
+msgid ""
+"If\tyou\tdon't\treceive\tan\temail,\tplease\tmake\tsure\tyou've\tentered"
+"\tthe address\tyou\tregistered\twith."
+msgstr ""
+"إن لم يصلك بريدا إلكترونيا من قبل موقعنا , فتأكد من أنك أدخلت البريد "
+"المستعمل في التسجيل"
+
+#: accounts/templates/base.html:29
+msgid "Home"
+msgstr "الرئيسية"
+
+#: accounts/templates/base.html:42
+msgid "Parameter"
+msgstr "إعدادات"
+
+#: accounts/templates/base.html:46
+msgid "edit Profile"
+msgstr "تعديل حسابي"
+
+#: accounts/templates/base.html:47
+msgid "change Password"
+msgstr "تغيير كلمة السر"
+
+#: accounts/templates/base.html:48
+msgid "Logout"
+msgstr "تسجيل الخروج"
+
+#: accounts/templates/base.html:50
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+#: accounts/templates/base.html:57
+msgid "Language"
+msgstr "اللغة"
+
+#: accounts/templates/base.html:63
+msgid "Arabic"
+msgstr "العربية"
+
+#: accounts/templates/base.html:66 mysite2/settings.py:73
+msgid "English"
+msgstr "اﻹنجليزية"
+
+#: accounts/templates/base.html:74
+msgid "Search"
+msgstr "بحث"
+
+#: accounts/views.py:45 accounts/views.py:61
+msgid "Results Not Found "
+msgstr "لا توجد نتائج"
+
+#: accounts/views.py:47 accounts/views.py:63
+#, python-format
+msgid "%(number)d Posts founded "
+msgstr "عرضاً %(number)d تم إيجاد"
+
+#: mysite2/settings.py:74
+msgid "Arab"
+msgstr "العربية"
+
+#: profiles/templates/profiles/deletePost.html:8
+msgid "Mission complete !"
+msgstr ""
+
+#: profiles/templates/profiles/deletePost.html:10
+msgid "Your\tPost\thas\tbeen\tsuccessfully deleted."
+msgstr "تم حذف العرض بنجاح"
+
+#: profiles/templates/profiles/deletePost.html:10
+#: profiles/templates/profiles/registration/changePasswordDone.html:9
+msgid "back to Home"
+msgstr "العودة للصفحة الرئيسية"
+
+#: profiles/templates/profiles/editPost.html:10
+#: profiles/templates/profiles/editProfile.html:11
+msgid "Edit successfully"
+msgstr "تم التعديل"
+
+#: profiles/templates/profiles/editPost.html:11
+msgid "You\thave\tbeen\tsuccessfully\tedit your Post."
+msgstr " لقد أتممت عملية التعديل بنجاح"
+
+#: profiles/templates/profiles/editPost.html:12
+#: profiles/templates/profiles/editProfile.html:13
+msgid "Back to Home"
+msgstr "العودة للصفحة الرئيسية"
+
+#: profiles/templates/profiles/editPost.html:15
+msgid "Edit your Post"
+msgstr "تعديل العرض"
+
+#: profiles/templates/profiles/editPost.html:19
+#: profiles/templates/profiles/share_post.html:14
+msgid "Name"
+msgstr "نوع الهاتف"
+
+#: profiles/templates/profiles/editPost.html:27
+#: profiles/templates/profiles/share_post.html:22
+msgid "Status"
+msgstr "حالة العرض"
+
+#: profiles/templates/profiles/editPost.html:99
+#: profiles/templates/profiles/share_post.html:94
+msgid "Cover for the Post"
+msgstr "واجهة العرض"
+
+#: profiles/templates/profiles/editPost.html:106
+#: profiles/templates/profiles/share_post.html:101
+msgid "More images for the Post"
+msgstr "المزيد من الصور"
+
+#: profiles/templates/profiles/editPost.html:130
+msgid "edit"
+msgstr "تعديل"
+
+#: profiles/templates/profiles/editProfile.html:3
+msgid "Edit Profile "
+msgstr "تعديل حسابي"
+
+#: profiles/templates/profiles/editProfile.html:12
+msgid "You\thave\tbeen\tsuccessfully\tedit your personel infos."
+msgstr "لقد أتممت تعديل معلوماتك الشخصية بنجاح"
+
+#: profiles/templates/profiles/editProfile.html:17
+msgid "Change Password"
+msgstr "تغيير كلمة السر"
+
+#: profiles/templates/profiles/editProfile.html:39
+msgid "You'll have a aunique user name."
+msgstr "ستحضئ باسم خاص بك لا يشاركك فيه غيرك"
+
+#: profiles/templates/profiles/editProfile.html:53
+msgid "You'll have a aunique phone number."
+msgstr "يجب إستعمال رقم هاتف واحد لكل حساب"
+
+#: profiles/templates/profiles/editProfile.html:79
+msgid "First Name"
+msgstr "اﻹسم اﻷول"
+
+#: profiles/templates/profiles/editProfile.html:93
+msgid "Last Name"
+msgstr "اﻹسم اﻷخير"
+
+#: profiles/templates/profiles/editProfile.html:106
+msgid "Profile Type"
+msgstr "نوع الحساب"
+
+#: profiles/templates/profiles/editProfile.html:119
+msgid "Address"
+msgstr "العنوان"
+
+#: profiles/templates/profiles/editProfile.html:132
+msgid "Country"
+msgstr "البلد"
+
+#: profiles/templates/profiles/editProfile.html:145
+msgid "State"
+msgstr "الولاية"
+
+#: profiles/templates/profiles/editProfile.html:158
+msgid "Save"
+msgstr "حفظ"
+
+#: profiles/templates/profiles/registration/changePassword.html:4
+msgid "Password Change"
+msgstr "تغيير كلمة السر"
+
+#: profiles/templates/profiles/registration/changePassword.html:7
+msgid "Change\tyour\tpassword"
+msgstr "غير كلمة السر"
+
+#: profiles/templates/profiles/registration/changePassword.html:12
+msgid "Your current Password"
+msgstr "كلمة السر المستعملة اﻵن"
+
+#: profiles/templates/profiles/registration/changePassword.html:20
+msgid "New Password"
+msgstr "كلمة السر الجديدة"
+
+#: profiles/templates/profiles/registration/changePassword.html:27
+msgid "Confirm "
+msgstr "تأكيد"
+
+#: profiles/templates/profiles/registration/changePasswordDone.html:3
+msgid "Password\tchanged"
+msgstr "تم تغيير كلمة السر"
+
+#: profiles/templates/profiles/registration/changePasswordDone.html:7
+msgid "Password Changed "
+msgstr "تم تغيير كلمة السر"
+
+#: profiles/templates/profiles/registration/changePasswordDone.html:8
+msgid "Your\tpassword\thas\tbeen\tsuccessfully\tchanged."
+msgstr "لقد غيرت كلمة السر بنجاح"
+
+#: profiles/templates/profiles/share_post.html:4
+msgid "Share Post"
+msgstr "شارك عرضاً"
+
+#: profiles/templates/profiles/share_post.html:10
+msgid "Add a new Post"
+msgstr "أضف عرضاً"
+
+#: profiles/templates/profiles/share_post.html:125
+msgid "create"
+msgstr "إضافة"
+
+#~ msgid "%(post.offer)s"
+#~ msgstr "%(post.offer)s"
+
+#~ msgid "about Us"
+#~ msgstr "المزيد عنا"

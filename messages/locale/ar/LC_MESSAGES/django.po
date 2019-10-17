@@ -1,0 +1,402 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Ossama M. Khayat <okhayat@yahoo.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-17 21:30+0000\n"
+"PO-Revision-Date: 2009-11-02 00:41+0300\n"
+"Last-Translator: Ossama M. Khayat <okhayat@yahoo.com>\n"
+"Language-Team: Arabic <doc@arabeyes.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: messages/admin.py:21
+msgid "group"
+msgstr "مجموعة"
+
+#: messages/admin.py:22
+msgid "Creates the message optionally for all users or a group of users."
+msgstr "ينشئ الرسالة اختياريا لجميع المستخدمين او لمجموعة من المستخدمين."
+
+#: messages/admin.py:30
+msgid "All users"
+msgstr "جميع المستخدمين"
+
+#: messages/admin.py:48 messages/models.py:91
+msgid "Message"
+msgstr "الرسالة"
+
+#: messages/admin.py:55
+msgid "Date/time"
+msgstr "التاريخ/الوقت"
+
+#: messages/apps.py:6 messages/models.py:92
+msgid "Messages"
+msgstr "الرسائل"
+
+#: messages/fields.py:56
+#, python-format
+msgid "The following usernames are incorrect: %(users)s"
+msgstr "أسماء المستخدمين التالي ذكرهم غير صحيحة: %(users)s"
+
+#: messages/forms.py:18 messages/models.py:55
+#: messages/templates/messages/outbox.html:9
+#: messages/templates/messages/view.html:13
+msgid "Recipient"
+msgstr "المستلم"
+
+#: messages/forms.py:19 messages/models.py:52
+#: messages/templates/messages/inbox.html:9
+#: messages/templates/messages/outbox.html:9
+#: messages/templates/messages/trash.html:9
+#: messages/templates/messages/view.html:7
+msgid "Subject"
+msgstr "الموضوع"
+
+#: messages/forms.py:20 messages/models.py:53
+msgid "Body"
+msgstr "المحتوى"
+
+#: messages/management.py:9
+msgid "Message Received"
+msgstr "تم استلام الرسالة"
+
+#: messages/management.py:9
+msgid "you have received a message"
+msgstr "وصلتك رسالة"
+
+#: messages/management.py:10
+msgid "Message Sent"
+msgstr "تم إرسال الرسالة"
+
+#: messages/management.py:10
+msgid "you have sent a message"
+msgstr "قمت بإرسال رسالة"
+
+#: messages/management.py:11
+msgid "Message Replied"
+msgstr "تم الرد على الرسالة"
+
+#: messages/management.py:11
+msgid "you have replied to a message"
+msgstr "قمت بالرد على الرسالة"
+
+#: messages/management.py:12
+msgid "Reply Received"
+msgstr "تم استلام الرد"
+
+#: messages/management.py:12
+msgid "you have received a reply to a message"
+msgstr "استملت رداً على رسالة"
+
+#: messages/management.py:13
+msgid "Message Deleted"
+msgstr "تم حذف الرسالة"
+
+#: messages/management.py:13
+msgid "you have deleted a message"
+msgstr "قمت بحذف رسالة"
+
+#: messages/management.py:14
+msgid "Message Recovered"
+msgstr "تم استرجاع الرسالة"
+
+#: messages/management.py:14
+msgid "you have undeleted a message"
+msgstr "قمت باسترجاع رسالة"
+
+#: messages/models.py:54 messages/templates/messages/inbox.html:9
+#: messages/templates/messages/trash.html:9
+#: messages/templates/messages/view.html:9
+msgid "Sender"
+msgstr "المرسل"
+
+#: messages/models.py:56
+msgid "Parent message"
+msgstr "الرسالة الأساسية"
+
+#: messages/models.py:57
+msgid "sent at"
+msgstr "أرسلت في"
+
+#: messages/models.py:58
+msgid "read at"
+msgstr "قُرأت في"
+
+#: messages/models.py:59
+msgid "replied at"
+msgstr "رُدّ عليها في"
+
+#: messages/models.py:60
+msgid "Sender deleted at"
+msgstr "حذفها المُرسل في"
+
+#: messages/models.py:61
+msgid "Recipient deleted at"
+msgstr "حذفها المستلم في"
+
+#: messages/templates/messages/base.html:8
+#: messages/templates/messages/inbox.html:5
+#: messages/templates/messages/new_message.html:12
+msgid "Inbox"
+msgstr "الوارد"
+
+#: messages/templates/messages/base.html:9
+#: messages/templates/messages/outbox.html:5
+msgid "Sent Messages"
+msgstr "الرسائل المرسلة"
+
+#: messages/templates/messages/base.html:10
+msgid "New Message"
+msgstr "رسالة جديدة"
+
+#: messages/templates/messages/base.html:11
+msgid "Trash"
+msgstr "الحاوية"
+
+#: messages/templates/messages/compose.html:5
+msgid "Compose Message"
+msgstr "أكتب رسالة"
+
+#: messages/templates/messages/compose.html:11
+msgid "Send"
+msgstr "أرسل"
+
+#: messages/templates/messages/inbox.html:9
+msgid "Received"
+msgstr "استُلمت"
+
+#: messages/templates/messages/inbox.html:9
+#: messages/templates/messages/outbox.html:9
+#: messages/templates/messages/trash.html:9
+msgid "Action"
+msgstr "إجراء"
+
+#: messages/templates/messages/inbox.html:21
+#: messages/templates/messages/outbox.html:18
+#: messages/templates/messages/trash.html:18
+#: messages/templates/messages/view.html:12
+msgid "DATETIME_FORMAT"
+msgstr "DATETIME_FORMAT"
+
+#: messages/templates/messages/inbox.html:22
+#: messages/templates/messages/outbox.html:19
+msgid "delete"
+msgstr "حذف"
+
+#: messages/templates/messages/inbox.html:28
+#: messages/templates/messages/outbox.html:25
+#: messages/templates/messages/trash.html:25
+msgid "No messages."
+msgstr "لا توجد رسائل."
+
+#: messages/templates/messages/new_message.html:3
+#, python-format
+msgid ""
+"Hello %(recipient)s,\n"
+"\n"
+"you received a private message from %(sender)s with\n"
+"the following contents:"
+msgstr ""
+"مرحباً %(recipient)s،\n"
+"\n"
+"وصلتك رسالة خاصة من %(sender)s\n"
+"تحتوي ما يلي:"
+
+#: messages/templates/messages/new_message.html:11
+#, python-format
+msgid "Sent from %(site_url)s"
+msgstr "أرسلت من %(site_url)s"
+
+#: messages/templates/messages/new_message.html:13
+#: messages/templates/messages/view.html:19
+msgid "Reply"
+msgstr "رد"
+
+#: messages/templates/messages/outbox.html:9
+msgid "Sent"
+msgstr "أرسل"
+
+#: messages/templates/messages/trash.html:5
+msgid "Deleted Messages"
+msgstr "الرسائل المحذوفة"
+
+#: messages/templates/messages/trash.html:9
+#: messages/templates/messages/view.html:11
+msgid "Date"
+msgstr "التاريخ"
+
+#: messages/templates/messages/trash.html:19
+msgid "undelete"
+msgstr "استرجاع"
+
+#: messages/templates/messages/trash.html:28
+msgid ""
+"Deleted Messages are removed from the trash at unregular intervals, don't "
+"rely on this feature for long-time storage."
+msgstr ""
+"تتم إزالة الرسائل المحذوفة من الحاوية على فترات زمنيّة متفاوتة، فلا تعتمد على "
+"هذه الميزة للتخزين الطويل المدى."
+
+#: messages/templates/messages/view.html:5
+msgid "View Message"
+msgstr "مشاهدة الرسالة"
+
+#: messages/templates/messages/view.html:21
+msgid "Delete"
+msgstr "حذف"
+
+#: messages/templates/notification/messages_deleted/full.txt:1
+#, fuzzy, python-format
+#| msgid "you have deleted a message"
+msgid "You have deleted the message '%(message)s'."
+msgstr "قمت بحذف رسالة"
+
+#: messages/templates/notification/messages_deleted/notice.html:1
+#, python-format
+msgid ""
+"You have deleted the message <a href=\"%(message_url)s\">%(message)s</a>."
+msgstr "قمت بحذف الرسالة <a href=\"%(message_url)s\">%(message)s</a>."
+
+#: messages/templates/notification/messages_received/full.txt:1
+#, fuzzy, python-format
+#| msgid "%(message_sender)s has sent you a reply to %(message_parent_msg)s."
+msgid ""
+"%(message_sender)s has sent you a message:\n"
+"\n"
+"%(message)s\n"
+"\n"
+"%(message_body)s\n"
+"\n"
+"http://%(current_site)s%(message_url)s"
+msgstr "أرسل لك %(message_sender)s رداً على %(message_parent_msg)s."
+
+#: messages/templates/notification/messages_received/notice.html:2
+#, python-format
+msgid ""
+"You have received the message <a href=\"%(message_url)s\">%(message)s</a> "
+"from %(message_sender)s."
+msgstr ""
+"وصلتك الرسالة <a href=\"%(message_url)s\">%(message)s</a> من "
+"%(message_sender)s."
+
+#: messages/templates/notification/messages_received/short.txt:1
+#: messages/templates/notification/messages_reply_received/short.txt:1
+#, python-format
+msgid "%(notice)s by %(message_sender)s"
+msgstr ""
+
+#: messages/templates/notification/messages_recovered/full.txt:1
+#, fuzzy, python-format
+#| msgid ""
+#| "You have recovered the message <a href=\"%(message_url)s\">%(message)s</"
+#| "a>."
+msgid "You have recovered the message '%(message)s'."
+msgstr "قمت باسترجاع الرسالة <a href=\"%(message_url)s\">%(message)s</a>."
+
+#: messages/templates/notification/messages_recovered/notice.html:1
+#, python-format
+msgid ""
+"You have recovered the message <a href=\"%(message_url)s\">%(message)s</a>."
+msgstr "قمت باسترجاع الرسالة <a href=\"%(message_url)s\">%(message)s</a>."
+
+#: messages/templates/notification/messages_replied/full.txt:1
+#, fuzzy, python-format
+#| msgid ""
+#| "You have replied to <a href=\"%(message_url)s\">%(message_parent_msg)s</"
+#| "a> from %(message_recipient)s."
+msgid ""
+"You have replied to '%(message_parent_msg)s' from %(message_recipient)s."
+msgstr ""
+"قمت بالرد الرسائل <a href=\"%(message_url)s\">%(message_parent_msg)s</a> من "
+"%(message_recipient)s."
+
+#: messages/templates/notification/messages_replied/notice.html:2
+#, python-format
+msgid ""
+"You have replied to <a href=\"%(message_url)s\">%(message_parent_msg)s</a> "
+"from %(message_recipient)s."
+msgstr ""
+"قمت بالرد الرسائل <a href=\"%(message_url)s\">%(message_parent_msg)s</a> من "
+"%(message_recipient)s."
+
+#: messages/templates/notification/messages_reply_received/full.txt:1
+#, python-format
+msgid ""
+"%(message_sender)s replied to '%(message_parent_msg)s':\n"
+"\n"
+"%(message)s\n"
+"\n"
+"%(message_body)s\n"
+"\n"
+"http://%(current_site)s%(message_url)s"
+msgstr ""
+
+#: messages/templates/notification/messages_reply_received/notice.html:2
+#, python-format
+msgid "%(message_sender)s has sent you a reply to %(message_parent_msg)s."
+msgstr "أرسل لك %(message_sender)s رداً على %(message_parent_msg)s."
+
+#: messages/templates/notification/messages_sent/full.txt:1
+#, fuzzy, python-format
+#| msgid ""
+#| "You have sent the message <a href=\"%(message_url)s\">%(message)s</a> to "
+#| "%(message_recipient)s."
+msgid "You have sent the message '%(message)s' to %(message_recipient)s."
+msgstr ""
+"قمت بإرسالة الرسالة <a href=\"%(message_url)s\">%(message)s</a> إلى "
+"%(message_recipient)s."
+
+#: messages/templates/notification/messages_sent/notice.html:2
+#, python-format
+msgid ""
+"You have sent the message <a href=\"%(message_url)s\">%(message)s</a> to "
+"%(message_recipient)s."
+msgstr ""
+"قمت بإرسالة الرسالة <a href=\"%(message_url)s\">%(message)s</a> إلى "
+"%(message_recipient)s."
+
+#: messages/utils.py:26
+#, python-format
+msgid ""
+"%(sender)s wrote:\n"
+"%(body)s"
+msgstr ""
+"كتب %(sender)s:\n"
+"%(body)s"
+
+#: messages/utils.py:54
+#, fuzzy, python-format
+#| msgid "Re: %(subject)s"
+msgid "Re%(prefix)s: %(subject)s"
+msgstr "رد: %(subject)s"
+
+#: messages/utils.py:60
+#, python-format
+msgid "New Message: %(subject)s"
+msgstr "رسالة جديدة: %(subject)s"
+
+#: messages/views.py:79 messages/views.py:116
+msgid "Message successfully sent."
+msgstr "تم إرسال الرسالة بنجاح."
+
+#: messages/views.py:98 messages/views.py:194
+#, python-format
+msgid "Re: %(subject)s"
+msgstr "رد: %(subject)s"
+
+#: messages/views.py:159
+msgid "Message successfully deleted."
+msgstr "تم حذف الرسالة بنجاح."
+
+#: messages/views.py:186
+msgid "Message successfully recovered."
+msgstr "تم استرجاع الرسالة بنجاح."

@@ -1,0 +1,112 @@
+
+{% extends 'base.html'%}
+{% load i18n %}
+{% block title %}{% trans "Share Post" %} {% endblock %}
+{% block content %}
+  {% load accounts_tags %}
+  <div class="container">
+    {{valid}}
+    {{form.errors}}
+    <br><h2>{% trans "Add a new Post" %} </h2><hr><br><br>
+  <div class="row">
+    <div class="offset-lg-3 col-lg-6 ">
+  <form action="." method="post" enctype="multipart/form-data">{% csrf_token %}
+    <h5>{% trans "Name" %} </h5>
+    {{form.name|addclass:"form-control"}}
+    {% if form.errors and form.name.errors %}
+    <div class="alert alert-danger" role="alert">
+      {{form.name.errors}}
+    </div>
+    {% endif %}
+     <br>
+     <h5>{% trans "Status" %}</h5>
+    {{form.status|addclass:"form-control"}}
+    {% if form.errors and form.status.errors %}
+    <div class="alert alert-danger" role="alert">
+      {{form.status.errors}}
+    </div>
+    {% endif %}
+    <br>
+    <h5>{% trans "Exchange" %} </h5>
+    {{form.exchange|addclass:"form-control"}}
+    {% if form.errors and form.exchange.errors %}
+    <div class="alert alert-danger" role="alert">
+      {{form.exchange.errors}}
+    </div>
+    {% endif %}
+    <br>
+    <h5>{% trans "Negotiation" %}</h5>
+    {{form.negotiation|addclass:"form-control"}}
+    {% if form.errors and form.negotiation.errors %}
+    <div class="alert alert-danger" role="alert">
+      {{form.negotiation.errors}}
+    </div>
+    {% endif %}
+    <br>
+    <h5>{% trans "Offer" %}</h5>
+    {{form.offer|addclass:"form-control"}}
+    {% if form.errors and form.offer.errors %}
+    <div class="alert alert-danger" role="alert">
+      {{form.offer.errors}}
+    </div>
+    {% endif %}
+    <br>
+    <h5>{% trans "Phone Status" %}</h5>
+    {{form.phoneStatus|addclass:"form-control"}}
+    {% if form.errors and form.phoneStatus.errors %}
+    <div class="alert alert-danger" role="alert">
+      {{form.phoneStatus.errors}}
+    </div>
+    {% endif %}
+    <br>
+    <h5>{% trans "Phone Number" %}</h5>
+    {{form.phone|addclass:"form-control"}}
+    {% if form.errors and form.phone.errors %}
+    <div class="alert alert-danger" role="alert">
+      {{form.phone.errors}}
+    </div>
+    {% endif %}
+    <br>
+    <h5>{% trans "Wilaya" %}</h5>
+    {{form.wilaya|addclass:"form-control"}}
+    {% if form.errors and form.wilaya.errors %}
+    <div class="alert alert-danger" role="alert">
+      {{form.wilaya.errors}}
+    </div>
+    {% endif %}
+    <br>
+    <h5>{% trans "Price" %}</h5>
+    {{form.price|addclass:"form-control"}}
+    {% if form.errors and form.price.errors %}
+    <div class="alert alert-danger" role="alert">
+      {{form.price.errors}}
+    </div>
+    {% endif %}
+    <br>
+    <h5>{% trans "Description" %}</h5>
+    {{form.description|addclass:"form-control"}}
+    {% if form.errors and form.description.errors %}
+    <div class="alert alert-danger" role="alert">
+      {{form.description.errors}}
+    </div>
+    {% endif %}
+    <br>
+    <h5>{% trans "Cover for the Post" %}</h5>
+    {{form.coverImg}}
+    {% if form.errors and form.coverImg.errors %}
+    <div class="alert alert-danger" role="alert">{{form.coverImg.errors}}
+      {% endif %}
+      <br><br>
+
+      <h5>{% trans "More images for the Post" %}</h5><br>
+       {{ formset.management_form }}
+       {{formset.as_ul}}
+      <br><hr>
+    <input type = 'submit' class="btn btn-outline-primary btn-md" value={% trans "create" %}>
+  </form>
+  <br><br>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}

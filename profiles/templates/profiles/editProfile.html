@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Edit Profile " %}{% endblock %}
+{% load accounts_tags %}
+{% block content %}
+<hr>
+
+<div class="container ">
+  {% if edit %}
+      <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">{% trans "Edit successfully" %}</h4>
+        <p>{% trans "You	have	been	successfully	edit your personel infos." %}</p><hr>
+                <a	href="{%	url 'home:users_posts'	%}" class="alert-link">{% trans "Back to Home" %} </a>
+        </div>
+      {% endif %}
+      <div class="list-inline">
+        <a href="{% url 'profiles:password_change' user.username %}" class="btn btn-outline-dark" role="button" aria-pressed="true">{% trans "Change Password" %}</a>
+      </div>
+    <div class="row">
+    	<div class="col">
+          <div class="tab-content">
+            <div class="tab-pane active" >
+                <hr>
+                  <form class="form" action="." method="post" id="registrationForm" enctype="multipart/form-data">{% csrf_token %}
+                    <div style="background :#eff7f6;">
+                      {% if user.profile.image %}
+                      <img src="{{user.profile.image.url}}" class="avatar img-circle rounded-circle border border-success " alt="personel image" width="250" height="250" >
+                      {% else %}
+                      <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle rounded-circle border border-success " alt="personel image" width="250" height="250" >
+                      {% endif %}
+                      {{profileForm.image}}
+                    </div></hr><br>
+                    <div class="row">
+                      <div class="offset-lg-3 col-lg-6 ">
+                      <div class="form-group">
+
+                          <div class="col">
+                              <h4>{% trans "User name" %}</h4>
+                              {{ userForm.username|addclass:"form-control"}}
+       												 <small id="emailHelp" class="form-text text-muted">{% trans "You'll have a aunique user name." %}</small>
+                          </div>
+                      </div>
+													{% if userForm.errors and userForm.username.errors %}
+														<div class="alert alert-danger" role="alert">
+															{{userForm.username.errors}}
+														</div>
+														{% endif %}
+
+                            <div class="form-group">
+
+                                <div class="col">
+                                    <h4>{% trans "Phone Number" %}</h4>
+                                    {{ userForm.phone|addclass:"form-control"}}
+             												 <small id="emailHelp" class="form-text text-muted">{% trans "You'll have a aunique phone number." %}</small>
+                                </div>
+                            </div>
+      													{% if userForm.errors and userForm.phone.errors %}
+      														<div class="alert alert-danger" role="alert">
+      															{{userForm.phone.errors}}
+      														</div>
+      														{% endif %}
+
+                      <div class="form-group">
+
+                          <div class="col">
+                            <h4>{% trans "Email" %}</h4>
+                              {{ userForm.email|addclass:"form-control"}}
+        											<small id="emailHelp" class="form-text text-muted">{% trans "We'll never share your email with anyone else." %}</small>
+                          </div>
+                      </div>
+											{% if userForm.errors and userForm.email.errors %}
+											<div class="alert alert-danger" role="alert">
+												{{userForm.email.errors}}
+											</div>
+											{% endif %}
+
+                      <div class="form-group">
+
+                          <div class="col">
+                              <h4>{% trans "First Name" %}</h4>
+															  {{ profileForm.first_name|addclass:"form-control"}}
+
+                          </div>
+                      </div>
+											{% if profileForm.errors and profileForm.first_name.errors %}
+											<div class="alert alert-danger" role="alert">
+												{{profileForm.first_name.errorss}}
+											</div>
+											{% endif %}
+
+                      <div class="form-group">
+
+                          <div class="col">
+                              <h4>{% trans "Last Name" %}</h4>
+      													{{ profileForm.last_name|addclass:"form-control"}}
+                          </div>
+                      </div>
+											{% if profileForm.errors and profileForm.last_name.errors %}
+												<div class="alert alert-danger" role="alert">
+													{{profileForm.last_name.errorss}}
+												</div>
+												{% endif %}
+
+                      <div class="form-group">
+
+                          <div class="col">
+                              <h4>{% trans "Profile Type" %}</h4>
+                              {{ profileForm.type|addclass:"form-control"}}
+                          </div>
+                      </div>
+											{% if profileForm.errors and profileForm.type.errors %}
+												<div class="alert alert-danger" role="alert">
+													{{profileForm.type.errorss}}
+												</div>
+												{% endif %}
+
+                      <div class="form-group">
+
+                          <div class="col">
+                            <h4>{% trans "Address" %}</h4>
+                               {{ profileForm.address|addclass:"form-control"}}
+                          </div>
+                      </div>
+												{% if profileForm.errors and profileForm.address.errors %}
+													<div class="alert alert-danger" role="alert">
+														{{profileForm.address.errorss}}
+													</div>
+													{% endif %}
+
+											<div class="form-group">
+
+                          <div class="col">
+                            <h4>{% trans "Country" %}</h4>
+                               {{ profileForm.country|addclass:"form-control"}}
+                          </div>
+                      </div>
+												{% if profileForm.errors and profileForm.country.errors %}
+													<div class="alert alert-danger" role="alert">
+														  {{profileForm.country.errorss}}
+													</div>
+													{% endif %}
+
+										<div class="form-group">
+
+                          <div class="col">
+                            <h4>{% trans "State" %}</h4>
+                               {{ profileForm.state|addclass:"form-control"}}
+                          </div>
+                      </div>
+												{% if profileForm.errors and profileForm.state.errors %}
+													<div class="alert alert-danger" role="alert">
+														  {{profileForm.state.errorss}}
+													</div>
+													{% endif %}
+
+                      <div class="form-group">
+                           <div class="col-xs-12">
+                                <br><hr>
+                              	  <input	type="submit"	class="btn btn-outline-primary btn-md" value={% trans "Save" %}>
+                            </div>
+
+                      </div>
+              	</form>
+              </div>
+            </div>
+     <br>
+
+
+             </div><!--/tab-pane-->
+
+          </div><!--/tab-content-->
+
+        </div><!--/col-9-->
+    </div><!--/row-->
+  {% endblock %}

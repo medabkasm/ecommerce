@@ -1,0 +1,169 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block title %}{{object.username}}{% endblock %}
+
+{% block content %}
+<div class="container">
+      <div class="col user-details">
+          <div class="row coralbg">
+              <div class="col-md-6 no-pad">
+                  <div class="user-pad">
+
+                      {% if request.user == object %}<h3>{% trans "Welcome back," %} {{object.username}}</h3><br>
+                      <a role="button" class="btn btn-labeled btn-info" href="{% url  'profiles:edit_profile' user.username %}">
+                          <span class="btn-label"><i class="fa fa-pencil"></i></span> {% trans "Edit Profile !" %}</a>
+                          {% else %}<h3>{% blocktrans with object_username=object.username %} Welcom to {{object_username }}'s profile {% endblocktrans %}</h3><br>
+                      <!--  <button type="button" class="btn btn-labeled btn-info follow-btn"  id="followButton" username = "{{object.username}}">
+
+                          <span class="btn-label"><i class="fa fa-pencil "></i></span>
+                          {%	if	request.user	not	in	object.followers.all	%}
+                      				{% trans "Follow !" %}
+                      		{%	else	%}
+                      				{% trans "UnFollow !" %}
+                          {%	endif	%}
+                        </button> -->
+
+                        <span id="followButton" class="btn btn-labeled btn-info follow-btn" title="Click to follow {{ object.username }}" value = "{{following}}"  username = "{{object.username}}">
+                        <input id="follow" type="hidden" name="follow" value="{{profile.username }}">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        <span class="btn-label"><i class="fa fa-pencil "></i></span>
+                        <span class="follow-text">
+                        {{ following|yesno:"Unfollow,Follow" }}
+                        </span>
+                        </span>
+                        {% endif %}
+                  </div>
+
+              </div>
+              <div class="col-md-6 no-pad">
+                  <div class="user-image">
+                      {% if object.profile.image %}
+                      <img src= {{object.profile.image.url}} class="img-responsive img-fluid thumbnail border border-success">
+                      {% else %}
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwpE5bzJrKq2x6OhQwu2qwPeiL0qZwTjcebS3PhLIyhRanXdOpZQ" alt="profile image">
+                      {% endif %}
+                  </div>
+              </div>
+          </div>
+          <div class="row overview">
+              <div class="col-md-4 user-pad text-center">
+                  <h5 id="old" >{% trans "FOLLOWERS" %}</h5>
+                  <h4>{{	object.followers.count	}}</h4>
+              </div>
+              <div class="col-md-4 user-pad text-center">
+                  <h5>{% trans "FOLLOWING" %}</h5>
+                  <h4>456</h4>
+              </div>
+              <div class="col-md-4 user-pad text-center">
+                  <h5>{% trans "Posts" %}</h5>
+                  <h4>{{posts.count}}</h4>
+              </div>
+          </div>
+        </div><hr>
+          <div class="row">
+            <div class="col">
+              <div class="btn-group" role="group">
+              <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#infos">
+                  {% trans "About Me" %}
+              </button>
+              {% if not request.user == object %}
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#contact">
+                  {% trans "Contact Me" %}
+              </button>
+              {% endif %}
+            </div>
+          </div>
+      </div><hr><br>
+        <a  href="{% url 'profiles:share_post' request.user.username %} "role="button" class="btn btn-success btn-lg btn-block ">{% trans "Add Post" %}</a>
+      <br>
+      <br>
+        {% if message %}
+        <br><h5>{{message}}<h5><br><br><hr>
+        {% endif %}
+        <div class = "row">
+          {% for userpost in posts %}
+              <div class=" col-xs-1 col-sm-6 col-md-4 col-lg-3 ">
+                  <div class="card  shadow p-3 mb-5 bg-white rounded "style=" width: 15rem ;margin: 1rem ;">
+                    {% if userpost.coverImg %}
+                    <img class="card-img-top img-responsive" src={{userpost.coverImg.url}} alt="Post picture" width="200" height="200">
+                    {% endif %}
+                    <div class="card-body">
+                      <h5 class="card-title">{{userpost.name}}</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"> {{userpost.wilaya}}</li>
+                      <li class="list-group-item">{{userpost.price}}  Da</li>
+                      <li class="list-group-item">{{userpost.phone}}</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="{{userpost.get_absolute_url}}" class="card-link">{% trans "More" %}</a>
+                      {% if request.user == userpost.profile %}
+                        <a  href="{{user.get_absolute_url}}" class="card-link text-success">{% trans "Me" %}</a>
+                      {% else %}
+                        <a href="{{userpost.profile.get_absolute_url}}" class="card-link text-success">{% trans "Owner" %}</a>
+                        {% endif %}
+                    </div>
+                  </div>
+              </div>
+        {% endfor %}
+          </div>
+    </div>
+
+    <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contact" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">{% trans "New message" %}</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">{% trans "Your Email:" %}</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">{% trans "Message:" %}</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-dismiss="modal">{% trans "Close" %}</button>
+            <button type="button" class="btn btn-info">{% trans "Send message" %}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="infos" tabindex="-1" role="dialog" aria-labelledby="infos" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">{% trans "My Infos" %}</h5>
+            <button type="button" class="close btn btn-dark" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <strong> {{object.profile.first_name }} {{object.profile.last_name }} </strong><hr>
+          {% if user == object %}
+          {{object.email }}<hr>
+          {{object.phone }}<hr>
+          {% endif %}
+          {{object.profile.type }}<hr>
+          {{object.profile.country }}<hr>
+          {{object.profile.state }}<hr>
+          {{object.profile.address }}<hr>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-dismiss="modal">{% trans "Close" %}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="new"></div>
+{% endblock %}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html >
+{% load i18n %}
+  {% load accounts_tags %}
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      {% load static %}
+      <link rel="stylesheet" type = "text/css" href = "{% static "accounts/style.css" %} " >
+      <link rel="stylesheet" type = 'text/css' href="{% static "accounts/lang.css" %}">
+      <link rel="stylesheet" type = 'text/css' href="{% static "accounts/style2.css" %}">
+  
+    <!-- Bootstrap CSS -->
+
+
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body  class = "all">
+      <nav class="navbar navbar-expand-lg navbar-light  bg-light ">
+  <a class="navbar-brand text-success" href="{% url 'home:users_posts' %}" >AbkasM        </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home:users_posts' %}">{% trans "Home" %} <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        {% if request.user.is_authenticated and user.profile.image%}
+          <a class="nav-link" href="{{user.get_absolute_url}}"><img src={{user.profile.image.url}} class="img-responsive rounded-circle border border-success" width = "30" height="30"> {{user.username}}</a>
+        {% else %}
+          {% if request.user.is_authenticated %}
+            <a class="nav-link" href="{{user.get_absolute_url}}">{{user.username}}</a>
+            {% endif %}
+        {% endif %}
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {% trans "Parameter" %}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          {% if request.user.is_authenticated %}
+            <a class="dropdown-item" href="{% url 'profiles:edit_profile' user.username %} ">{% trans "edit Profile" %}</a>
+            <a class="dropdown-item" href="{% url 'profiles:password_change' user.username %} ">{% trans "change Password" %}</a>
+            <a class="dropdown-item" href="{% url 'home:logout' %}">{% trans "Logout" %}</a>
+          {% else %}
+          <a class="dropdown-item" href="{% url 'home:login' %}">{% trans "Login" %}</a>
+          <a class="dropdown-item" href="{% url 'home:register' %}">{% trans "Register" %}</a>
+          {% endif %}
+          <div class="dropdown-divider"></div>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {% trans "Language" %}
+      </a>
+      {%	get_current_language	as	LANGUAGE_CODE	%}
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <!-- if English is the current Language -->
+        {% if LANGUAGE_CODE == 'en' %}
+        <a href="/ar/" class="dropdown-item"><img src="{% static "accounts/alg.png"%} "/> {% trans "Arabic" %}</a>
+        <!-- else -->
+        {% else %}
+        <a href="/en/" class="dropdown-item"><img src="{% static "accounts/eng.png"%} "/> {% trans "English" %}</a>
+        {% endif %}
+      </div>
+      </li>
+    </ul>
+    {% if allow_search %}
+      <form method="post"  id = "search-form" action = "{% url 'home:users_posts' %}" class="form-inline my-2 my-lg-0">{% csrf_token %}
+        {{search.search|addclass:"form-control mr-sm-2" }}
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">{% trans "Search" %}</button>
+      </form>
+      {% endif %}
+  </div>
+</nav>
+
+  {% block content %}
+  {% endblock %}
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>
